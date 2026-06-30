@@ -24,9 +24,6 @@ export default function Boat() {
                 loading="lazy"
               />
               {/* Стеклянная плашка-награда поверх фото */}
-              <span className="glass absolute left-4 top-4 inline-flex items-center gap-2 rounded-full px-4 py-2 text-[0.74rem] font-semibold text-ice">
-                <Award size={16} className="text-gold" /> Лодка года 2025–2026
-              </span>
             </figure>
             {/* Два фото поменьше в ряд */}
             <div className="grid grid-cols-2 gap-4">
