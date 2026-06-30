@@ -78,7 +78,7 @@ export default function Hero() {
               href="#boat"
               className="inline-flex cursor-pointer items-center gap-2.5 rounded-lg border border-white/60 px-8 py-4 text-[0.98rem] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/10"
             >
-              size={17} /> Смотреть катер
+              Смотреть катер
             </a>
           </div>
 
