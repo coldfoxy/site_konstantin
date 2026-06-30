@@ -73,13 +73,12 @@ export default function Hero() {
               className="inline-flex cursor-pointer items-center gap-2.5 rounded-lg border border-white/60 px-8 py-4 text-[0.98rem] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/10"
             >
               Забронировать прогулку
-              <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
             </a>
             <a
               href="#boat"
               className="inline-flex cursor-pointer items-center gap-2.5 rounded-lg border border-white/60 px-8 py-4 text-[0.98rem] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/10"
             >
-              <Anchor size={17} /> Смотреть катер
+              size={17} /> Смотреть катер
             </a>
           </div>
 
