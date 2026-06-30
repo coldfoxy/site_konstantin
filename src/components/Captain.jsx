@@ -52,7 +52,7 @@ export default function Captain() {
             <div className="pointer-events-none absolute -inset-6 -z-10 rounded-[2.5rem] bg-[#2a3550]/10 blur-3xl" />
             <figure className="relative mx-auto max-w-md overflow-hidden rounded-[1.5rem] border border-line shadow-[0_40px_90px_-50px_rgba(32,32,28,0.3)]">
               <img
-                src="img/captain.jpg"
+                src="img/kapitan-tiser.jpg"
                 alt="Башня Лахта-центра сквозь капли дождя на стекле катера"
                 className="aspect-[4/5] w-full object-cover"
                 loading="lazy"
