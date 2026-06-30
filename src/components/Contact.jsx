@@ -67,7 +67,7 @@ export default function Contact() {
           <div>
             <Reveal as="p" className="kicker">Бронирование</Reveal>
             <Reveal as="h2" delay={0.06} className="mt-4 font-display text-[clamp(2rem,4.4vw,3.4rem)] font-semibold leading-[1.08] tracking-tight text-ice">
-              Забронируйте свой&nbsp;вечер на&nbsp;воде
+              Забронируйте свой идеальный&nbsp;вечер на&nbsp;воде
             </Reveal>
             <Reveal as="p" delay={0.12} className="mt-5 max-w-xl text-[1.05rem] leading-relaxed text-mist">
               Напишите или позвоните — подберём дату, маршрут и формат. Стоимость
