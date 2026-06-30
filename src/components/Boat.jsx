@@ -18,7 +18,7 @@ export default function Boat() {
           <Reveal className="flex flex-col gap-4">
             <figure className="relative overflow-hidden rounded-[1.5rem] border border-line shadow-[0_40px_90px_-50px_rgba(32,32,28,0.28)]">
               <img
-                src="img/boat-action.jpg"
+                src="img/boat-tiser.mp4"
                 alt="Катер Nobilis 858 «Капитан Константин» на воде"
                 className="aspect-[16/11] w-full object-cover"
                 loading="lazy"
