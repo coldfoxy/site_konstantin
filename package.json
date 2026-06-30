@@ -1,0 +1,23 @@
+{
+  "name": "kapitan-konstantin",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "description": "Капитан Константин — премиальные прогулки по Санкт-Петербургу на катере Nobilis 858",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lucide-react": "^0.456.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tailwindcss": "^4.0.0",
+    "vite": "^6.0.7"
+  }
+}

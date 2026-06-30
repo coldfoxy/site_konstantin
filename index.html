@@ -1,0 +1,47 @@
+<!doctype html>
+<!-- ===========================================================================
+     index.html — «обёртка» страницы. Сам сайт рисует React внутри <div id="root">.
+     Здесь меняют: заголовок вкладки (title), описание для поисковиков (description),
+     превью для соцсетей (og:...) и подключение шрифтов.
+     Видимый контент сайта тут НЕ пишут — он в файлах src/components.
+============================================================================ -->
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> <!-- Иконка вкладки (файл favicon.svg) -->
+    <meta name="theme-color" content="#F4EEE1" />                <!-- Цвет адресной строки на мобильных -->
+
+    <!-- Заголовок вкладки браузера и для поисковиков -->
+    <title>Искусство присутствия. Капитан Константин</title>
+    <!-- Описание сайта для поисковой выдачи (Google/Яндекс) -->
+    <meta
+      name="description"
+      content="Петербург с воды глазами капитана Константина. Премиальный катер Nobilis 858 — лодка года 2025–2026. Авторские маршруты, фотопрогулки, романтические вечера. До 7 гостей. +7 911 990 8089."
+    />
+
+    <!-- Open Graph — как выглядит ссылка при отправке в соцсети/мессенджеры -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Капитан Константин — Петербург с воды" />
+    <meta
+      property="og:description"
+      content="Премиальные прогулки по Санкт-Петербургу на катере Nobilis 858 — лодка года 2025–2026."
+    />
+    <meta property="og:image" content="/img/hero-bridge.jpg" /> <!-- Картинка-превью ссылки -->
+    <meta property="og:locale" content="ru_RU" />
+
+    <!-- Подключение шрифтов: Cormorant Garamond (заголовки) + EB Garamond (текст).
+         Old money / heritage serif. Сменить шрифт = поменять тут ссылку
+         и названия в src/index.css (--font-display / --font-sans). -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div> <!-- Сюда React вставляет весь сайт -->
+    <script type="module" src="/src/main.jsx"></script> <!-- Запуск приложения (см. src/main.jsx) -->
+  </body>
+</html>

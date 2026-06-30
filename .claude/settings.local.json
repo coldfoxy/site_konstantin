@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/mac/.claude/skills/ui-ux-pro-max/**)",
+      "Bash(python3 scripts/search.py \"luxury yacht boat tour service premium maritime elegant Saint Petersburg\" --design-system -p \"Капитан Константин\")",
+      "Bash(npm --version)",
+      "Bash(mkdir -p legacy public src/components src/data)",
+      "Bash(cp -R assets/img public/img)",
+      "Bash(cp favicon.svg public/favicon.svg)",
+      "Bash(mv index.html legacy/index.html)",
+      "Bash(mv assets *)",
+      "Bash(npm install *)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npm run *)",
+      "Bash(git fetch *)",
+      "Bash(cp public/img/captain.jpg /tmp/captain.local.backup.jpg)",
+      "Bash(rm public/img/captain.jpg)",
+      "Bash(git pull *)",
+      "Bash(grep -iE '\\\\.\\(jpg|jpeg|png|webp\\)$')",
+      "Bash(grep -iE '\\\\.\\(jpg|jpeg\\)$')",
+      "Bash(grep -iE '\\\\.png$')",
+      "Bash(grep -iE '\\\\.heic$')",
+      "Bash(grep -iE '\\\\.\\(mp4|mov\\)$')",
+      "Bash(git add *)",
+      "Bash(openssl s_client -connect clean-clinic.ru:443 -servername clean-clinic.ru)",
+      "Bash(openssl x509 *)",
+      "Bash(curl -s -I -L -m 20 https://clean-clinic.ru/)",
+      "WebSearch"
+    ]
+  }
+}
