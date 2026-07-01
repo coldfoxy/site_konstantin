@@ -25,7 +25,8 @@
       "Bash(openssl s_client -connect clean-clinic.ru:443 -servername clean-clinic.ru)",
       "Bash(openssl x509 *)",
       "Bash(curl -s -I -L -m 20 https://clean-clinic.ru/)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(awk '{print $5, $9}')"
     ]
   }
 }

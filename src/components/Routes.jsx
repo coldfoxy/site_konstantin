@@ -16,7 +16,7 @@ export default function Routes() {
         <div className="mx-auto mb-14 max-w-2xl text-center">
           <Reveal as="p" className="kicker kicker--center justify-center">Маршруты</Reveal>
           <Reveal as="h2" delay={0.06} className="mt-4 font-display text-[clamp(2rem,4.4vw,3.4rem)] font-semibold leading-[1.08] tracking-tight text-ice">
-            Четыре взгляда на&nbsp;город
+            Пять взглядов на&nbsp;город
           </Reveal>
           <Reveal as="p" delay={0.12} className="mx-auto mt-5 max-w-xl text-[1.05rem] leading-relaxed text-mist">
             Выберите направление или доверьтесь капитану — он составит маршрут под ваше
@@ -25,7 +25,7 @@ export default function Routes() {
         </div>
 
         {/* Сетка карточек: 1 колонка на телефоне, 2 на планшете, 4 на ПК. Появляются «лесенкой» */}
-        <RevealGroup className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <RevealGroup className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {ROUTES.map((r) => (                       // Перебираем маршруты из content.js
             <RevealItem key={r.num}>
               {/* group = чтобы фото увеличивалось при наведении на карточку */}
