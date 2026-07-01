@@ -94,7 +94,7 @@ export const ROUTES = [
   {
     num: "05",
     title: "Прогулка до Кронштадта",
-    meta: "2 часа",
+    meta: "от 2 часов",
     img: "img/g-sailboat-gold.jpg",
     alt: "Под мостом в центре Петербурга",
   },
