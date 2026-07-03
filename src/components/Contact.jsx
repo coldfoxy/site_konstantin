@@ -98,17 +98,21 @@ export default function Contact() {
               })}
             </Reveal>
 
-            {/* Блок «Этикет на борту» — список из content.js (ETIQUETTE) */}
-            <Reveal delay={0.2} className="glass mt-9 rounded-2xl p-6">
-              <h3 className="text-[0.8rem] font-semibold uppercase tracking-[0.2em] text-teal">Этикет на борту</h3>
-              <ul className="mt-4 grid grid-cols-1 gap-x-6 gap-y-2 sm:grid-cols-2">
-                {ETIQUETTE.map((e) => (
-                  <li key={e} className="relative pl-4 text-[0.88rem] text-mist before:absolute before:left-0 before:top-1.5 before:h-1.5 before:w-1.5 before:rounded-full before:bg-teal">
-                    {e}
-                  </li>
-                ))}
-              </ul>
+            {/* Интерактивная карта Яндекс: где причал (можно двигать и приближать колёсиком/кнопками).
+                Точка причала — координаты в ссылке ниже: ll=ЦЕНТР и pt=ОТМЕТКА (долгота,широта).
+                Чтобы сдвинуть точку — поменяйте оба числа (и то же в CONTACT.mapUrl в content.js).
+                z=16 — масштаб (больше число = ближе). */}
+            <Reveal delay={0.18} className="mt-3 overflow-hidden rounded-2xl border border-line">
+              <iframe
+                title="Причал «Капитан Константин» на карте — Петровский пр., 5к1"
+                src="https://yandex.ru/map-widget/v1/?ll=30.274740%2C59.959780&z=16&pt=30.274740%2C59.959780%2Cpm2rdm"
+                className="block h-64 w-full sm:h-72"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
             </Reveal>
+
           </div>
 
           {/* --- ПРАВО: форма заявки --- */}
@@ -158,6 +162,18 @@ export default function Contact() {
                   Текст заявки скопируется, откроется чат в Telegram — вставьте его и отправьте.
                 </p>
               </form>
+            </div>
+
+            {/* Этикет на борту — под формой (перенесён из левой колонки) */}
+            <div className="glass mt-6 rounded-2xl p-6">
+              <h3 className="text-[0.8rem] font-semibold uppercase tracking-[0.2em] text-teal">Этикет на борту</h3>
+              <ul className="mt-4 grid grid-cols-1 gap-x-6 gap-y-2 sm:grid-cols-2">
+                {ETIQUETTE.map((e) => (
+                  <li key={e} className="relative pl-4 text-[0.88rem] text-mist before:absolute before:left-0 before:top-1.5 before:h-1.5 before:w-1.5 before:rounded-full before:bg-teal">
+                    {e}
+                  </li>
+                ))}
+              </ul>
             </div>
           </Reveal>
         </div>

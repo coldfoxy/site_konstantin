@@ -107,6 +107,24 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
+      {/* Цитата — вверху справа, сразу под кнопкой «Забронировать», с линией-акцентом справа.
+          hidden lg:block = видна на широких экранах. Положение — классы top и right; размер —
+          text-[clamp(...)]. Текст менять — прямо здесь. */}
+      <figure
+        className="rise absolute right-8 top-20 z-20 hidden max-w-[19rem] border-r border-white/35 pr-5 text-right lg:block xl:right-12"
+        style={{ animationDelay: "0.5s" }}
+      >
+        <blockquote className="font-display text-[clamp(1.05rem,1.15vw,1.28rem)] italic leading-snug text-white [text-shadow:0_2px_16px_rgba(0,0,0,0.65)]">
+          «И вот вся жизнь, круженье, пенье<br />
+          Моря, пустыни, города,<br />
+          Мелькающее отраженье<br />
+          Потерянного навсегда»
+        </blockquote>
+        <figcaption className="mt-3 text-[0.72rem] uppercase tracking-[0.22em] text-white/60">
+          Николай Гумилёв
+        </figcaption>
+      </figure>
     </section>
   );
 }
