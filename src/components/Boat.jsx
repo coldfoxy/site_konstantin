@@ -17,13 +17,20 @@ export default function Boat() {
           {/* --- ЛЕВО: коллаж из фото --- */}
           <Reveal className="flex flex-col gap-4">
             <figure className="relative overflow-hidden rounded-[1.5rem] border border-line shadow-[0_40px_90px_-50px_rgba(32,32,28,0.28)]">
-              <img
-                src="img/boat-tiser.mp4"
-                alt="Катер Nobilis 858 «Капитан Константин» на воде"
+              {/* Видео катера: без звука (muted), зациклено (loop), автозапуск (autoPlay).
+                  poster = фото-заглушка, пока видео грузится. Заменить ролик — положите
+                  новый boat-tiser.mp4 в public/img. */}
+              <video
                 className="aspect-[16/11] w-full object-cover"
-                loading="lazy"
-              />
-              {/* Стеклянная плашка-награда поверх фото */}
+                poster="img/boat-action.jpg"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+              >
+                <source src="img/boat-tiser.mp4" type="video/mp4" />
+              </video>
             </figure>
             {/* Два фото поменьше в ряд */}
             <div className="grid grid-cols-2 gap-4">
