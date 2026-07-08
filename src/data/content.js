@@ -67,35 +67,35 @@ export const ROUTES = [
     num: "01",                                          // Номер на карточке
     title: "Каналы Петербурга и Финский залив",         // Заголовок маршрута
     meta: "от 2 часов",                                 // Длительность (пилюля внизу)
-    img: "img/g-blue-water.jpg",                       // Фоновое фото карточки
+    img: "img/g-blue-water.webp",                       // Фоновое фото карточки
     alt: "Финский залив на закате",                     // Описание фото (для SEO/доступности)
   },
   {
     num: "02",
     title: "Петроградская сторона и символы Петербурга",
     meta: "2 часа",
-    img: "img/g-st-isaac.jpg",
+    img: "img/g-st-isaac.webp",
     alt: "Купол Исаакиевского собора",
   },
   {
     num: "03",
     title: "Встреча с парадным Петербургом",
     meta: "2 часа",
-    img: "img/hero-sunset.jpg",
+    img: "img/hero-sunset.webp",
     alt: "Парадный Петербург на закате с воды",
   },
   {
     num: "04",
     title: "Реки и каналы в сердце Петербурга",
     meta: "2 часа",
-    img: "img/g-under-bridge.jpg",
+    img: "img/g-under-bridge.webp",
     alt: "Под мостом в центре Петербурга",
   },
   {
     num: "05",
     title: "Прогулка до Кронштадта",
     meta: "от 2 часов",
-    img: "img/g-sailboat-gold.jpg",
+    img: "img/g-sailboat-gold.webp",
     alt: "Под мостом в центре Петербурга",
   },
 ];
@@ -221,16 +221,16 @@ export const FAQ = [
 //       "tall" = высокая (на 2 строки), "wide" = широкая (на 2 колонки),
 //       без span = обычная квадратная плитка.
 export const GALLERY = [
-  { src: "img/boat-bw.jpg", alt: "Катер Nobilis 858, отражение в воде, чёрно-белое фото", span: "tall" },
-  { src: "img/g-red-sunset.jpg", alt: "Алый закат над водой" },
-  { src: "img/boat-wake.jpg", alt: "След катера на Неве у набережной", span: "wide" },
-  { src: "img/g-purple-sail.jpg", alt: "Парусник с фиолетовым спинакером" },
-  { src: "img/g-sailboat-sunset.jpg", alt: "Парусник на закате", span: "tall" },
-  { src: "img/g-marina-sunset.jpg", alt: "Марина на закате" },
-  { src: "img/g-clouds-sea.jpg", alt: "Драматичные облака над заливом", span: "wide" },
-  { src: "img/g-fireworks.jpg", alt: "Фейерверк над Невой" },
-  { src: "img/g-gold-water.jpg", alt: "Золотые отблески заката на воде" },
-  { src: "img/g-sailboat-gold.jpg", alt: "Парусник в золотой час", span: "tall" },
-  { src: "img/g-sailboat-clouds.jpg", alt: "Парусник под закатными облаками" },
-  { src: "img/g-sun-wake.jpg", alt: "Дорожка солнца на воде", span: "wide" },
+  { src: "img/boat-bw.webp", alt: "Катер Nobilis 858, отражение в воде, чёрно-белое фото", span: "tall" },
+  { src: "img/g-red-sunset.webp", alt: "Алый закат над водой" },
+  { src: "img/boat-wake.webp", alt: "След катера на Неве у набережной", span: "wide" },
+  { src: "img/g-purple-sail.webp", alt: "Парусник с фиолетовым спинакером" },
+  { src: "img/g-sailboat-sunset.webp", alt: "Парусник на закате", span: "tall" },
+  { src: "img/g-marina-sunset.webp", alt: "Марина на закате" },
+  { src: "img/g-clouds-sea.webp", alt: "Драматичные облака над заливом", span: "wide" },
+  { src: "img/g-fireworks.webp", alt: "Фейерверк над Невой" },
+  { src: "img/g-gold-water.webp", alt: "Золотые отблески заката на воде" },
+  { src: "img/g-sailboat-gold.webp", alt: "Парусник в золотой час", span: "tall" },
+  { src: "img/g-sailboat-clouds.webp", alt: "Парусник под закатными облаками" },
+  { src: "img/g-sun-wake.webp", alt: "Дорожка солнца на воде", span: "wide" },
 ];

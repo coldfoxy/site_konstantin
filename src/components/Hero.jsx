@@ -2,7 +2,7 @@
 //  Hero.jsx — ГЛАВНЫЙ ЭКРАН (первое, что видит посетитель).
 //  Фон — ВИДЕО или ФОТО на весь экран (определяется автоматически):
 //    • если в public/img есть файл hero.mp4 — играет видео (без звука, зациклено);
-//    • если видео нет — показывается фото (poster = img/boatphoto.jpg).
+//    • если видео нет — показывается фото (poster = img/boatphoto.webp).
 //  Хотите видео → загрузите hero.mp4 в public/img. Хотите обратно фото → удалите hero.mp4.
 //  Сменить фото: замените boatphoto.jpg или поменяйте poster ниже. Текст — БЕЛЫЙ.
 // ============================================================================
@@ -19,7 +19,7 @@ export default function Hero() {
             автозапуск (autoPlay), без перехода в полноэкранный режим на телефоне (playsInline). */}
         <video
           className="h-full w-full animate-kenburns object-cover"
-          poster="img/boatphoto.jpg"
+          poster="img/boatphoto.webp"
           autoPlay
           muted
           loop

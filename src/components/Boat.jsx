@@ -22,7 +22,7 @@ export default function Boat() {
                   новый boat-tiser.mp4 в public/img. */}
               <video
                 className="aspect-[16/11] w-full object-cover"
-                poster="img/boat-action.jpg"
+                poster="img/boat-action.webp"
                 autoPlay
                 muted
                 loop
@@ -34,8 +34,8 @@ export default function Boat() {
             </figure>
             {/* Два фото поменьше в ряд */}
             <div className="grid grid-cols-2 gap-4">
-              <img src="img/interior-cockpit.jpg" alt="Кокпит и штурвал катера Nobilis 858" className="aspect-[4/3] w-full rounded-2xl border border-line object-cover" loading="lazy" />
-              <img src="img/interior-seats.jpg" alt="Кожаные шезлонги и тиковая палуба на борту" className="aspect-[4/3] w-full rounded-2xl border border-line object-cover" loading="lazy" />
+              <img src="img/interior-cockpit.webp" alt="Кокпит и штурвал катера Nobilis 858" className="aspect-[4/3] w-full rounded-2xl border border-line object-cover" loading="lazy" />
+              <img src="img/interior-seats.webp" alt="Кожаные шезлонги и тиковая палуба на борту" className="aspect-[4/3] w-full rounded-2xl border border-line object-cover" loading="lazy" />
             </div>
           </Reveal>
 
