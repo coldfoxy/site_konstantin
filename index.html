@@ -9,6 +9,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ЧИСТИЛЬЩИК СТАРОГО SERVICE-WORKER'А (остался у посетителей от прежнего сайта на
+         Tilda и мешал загрузке). Снимает регистрацию всех воркеров, чистит кэш и один раз
+         перезагружает страницу. Для новых посетителей ничего не делает. Можно удалить
+         через несколько месяцев, когда старые воркеры уже вымрут. -->
+    <script>
+      (function () {
+        if (!("serviceWorker" in navigator)) return;
+        navigator.serviceWorker.getRegistrations().then(function (regs) {
+          if (!regs.length) return;
+          Promise.all(regs.map(function (r) { return r.unregister(); })).then(function () {
+            var done = function () {
+              if (!sessionStorage.getItem("sw-cleaned")) {
+                sessionStorage.setItem("sw-cleaned", "1");
+                location.reload();
+              }
+            };
+            if (window.caches && caches.keys) {
+              caches.keys().then(function (keys) {
+                return Promise.all(keys.map(function (k) { return caches.delete(k); }));
+              }).then(done, done);
+            } else { done(); }
+          });
+        });
+      })();
+    </script>
+
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> <!-- Иконка вкладки (файл favicon.svg) -->
     <meta name="theme-color" content="#F4EEE1" />                <!-- Цвет адресной строки на мобильных -->
 

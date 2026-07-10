@@ -3,11 +3,30 @@
 //  Слева — коллаж из фото, справа — текст, характеристики и список «На борту».
 //  Список «На борту» берётся из content.js (AMENITIES). Фото — в папке public/img.
 // ============================================================================
+import { useEffect, useRef } from "react";          // Хуки React для видео
 import { Check, Award } from "lucide-react";       // Иконки: галочка, медаль
 import { Reveal } from "../lib/Reveal.jsx";         // Обёртка для плавного появления
 import { AMENITIES } from "../data/content.js";     // Список удобств
 
 export default function Boat() {
+  // Видео катера иногда не стартует сразу (браузер откладывает автозапуск, пока
+  // блок вне экрана). Поэтому запускаем его принудительно, как только секция
+  // появляется в зоне видимости — тогда видео играет сразу, без постера-заглушки.
+  const videoRef = useRef(null);
+  useEffect(() => {
+    const v = videoRef.current;
+    if (!v) return;
+    const io = new IntersectionObserver(
+      (entries) =>
+        entries.forEach((e) => {
+          if (e.isIntersecting) v.play().catch(() => {});
+        }),
+      { threshold: 0.25 }
+    );
+    io.observe(v);
+    return () => io.disconnect();
+  }, []);
+
   return (
     <section id="boat" className="relative py-[clamp(72px,11vw,140px)]"> {/* py = отступы сверху/снизу */}
       <div className="mx-auto max-w-[1240px] px-6 sm:px-7">
@@ -21,13 +40,14 @@ export default function Boat() {
                   poster = фото-заглушка, пока видео грузится. Заменить ролик — положите
                   новый boat-tiser.mp4 в public/img. */}
               <video
+                ref={videoRef}
                 className="aspect-[16/11] w-full object-cover"
                 poster="img/boat-action.webp"
                 autoPlay
                 muted
                 loop
                 playsInline
-                preload="metadata"
+                preload="auto"
               >
                 <source src="img/boat-tiser.mp4" type="video/mp4" />
               </video>
