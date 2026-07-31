@@ -39,23 +39,78 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> <!-- Иконка вкладки (файл favicon.svg) -->
     <meta name="theme-color" content="#F4EEE1" />                <!-- Цвет адресной строки на мобильных -->
 
-    <!-- Заголовок вкладки браузера и для поисковиков -->
-    <title>Искусство присутствия. Капитан Константин</title>
-    <!-- Описание сайта для поисковой выдачи (Google/Яндекс) -->
+    <!-- Заголовок вкладки и для поиска. ВАЖНО для SEO: ключевые слова в начале. -->
+    <title>Аренда катера в Санкт-Петербурге · Прогулки по Неве — Капитан Константин</title>
+    <!-- Описание для поисковой выдачи (Google/Яндекс). ~160 символов, с ключевыми словами. -->
     <meta
       name="description"
-      content="Петербург с воды глазами капитана Константина. Премиальный катер Nobilis 858 — лодка года 2025–2026. Авторские маршруты, фотопрогулки, романтические вечера. До 7 гостей. +7 911 990 8089."
+      content="Аренда катера в Санкт-Петербурге: прогулки по Неве, морские прогулки и фотосессии на премиальном катере Nobilis 858. Катер напрокат до 7 гостей. Тел. +7 911 990 8089."
     />
+    <!-- Ключевые слова (Яндекс частично учитывает) -->
+    <meta name="keywords" content="аренда катера, аренда катера санкт-петербург, катер напрокат, прогулки по Неве, морская прогулка, прогулка на катере спб" />
+    <!-- Канонический адрес — чтобы поисковик не считал варианты с www/параметрами дублями -->
+    <link rel="canonical" href="https://kapitankonstantin.ru/" />
+
+    <!-- ПОДТВЕРЖДЕНИЕ ПРАВ В ВЕБМАСТЕРАХ: когда зарегистрируешь сайт в Яндекс.Вебмастере
+         и Google Search Console, они дадут мета-тег — вставь его сюда (раскомментируй):
+         <meta name="yandex-verification" content="КОД_ИЗ_ЯНДЕКС_ВЕБМАСТЕРА" />
+         <meta name="google-site-verification" content="КОД_ИЗ_GOOGLE" /> -->
 
     <!-- Open Graph — как выглядит ссылка при отправке в соцсети/мессенджеры -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Капитан Константин — Петербург с воды" />
+    <meta property="og:url" content="https://kapitankonstantin.ru/" />
+    <meta property="og:title" content="Аренда катера в Санкт-Петербурге — Капитан Константин" />
     <meta
       property="og:description"
-      content="Премиальные прогулки по Санкт-Петербургу на катере Nobilis 858 — лодка года 2025–2026."
+      content="Прогулки по Неве и морские прогулки на премиальном катере Nobilis 858. Катер напрокат в СПб, до 7 гостей."
     />
     <meta property="og:image" content="/img/hero-bridge.jpg" /> <!-- Картинка-превью ссылки -->
     <meta property="og:locale" content="ru_RU" />
+
+    <!-- Микроразметка Schema.org (JSON-LD): «объясняет» поисковику, что это за бизнес —
+         название, адрес, телефон, цена, координаты причала. Помогает в Яндекс/Google Картах
+         и rich-результатах. Данные — как в src/data/content.js (при смене адреса/телефона правь и тут). -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Капитан Константин — аренда катера в Санкт-Петербурге",
+      "description": "Аренда катера и прогулки по Неве на премиальном катере Nobilis 858 в Санкт-Петербурге. Морские прогулки, фотосессии, романтические вечера.",
+      "url": "https://kapitankonstantin.ru/",
+      "telephone": "+79119908089",
+      "image": "https://kapitankonstantin.ru/img/hero-bridge.jpg",
+      "priceRange": "от 20000 ₽",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Петровский пр., д. 5, к. 1",
+        "addressLocality": "Санкт-Петербург",
+        "addressCountry": "RU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 59.959780,
+        "longitude": 30.274740
+      },
+      "areaServed": { "@type": "City", "name": "Санкт-Петербург" },
+      "makesOffer": {
+        "@type": "Offer",
+        "name": "Аренда катера с капитаном — прогулка по Неве",
+        "priceCurrency": "RUB",
+        "price": "20000",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "20000",
+          "priceCurrency": "RUB",
+          "unitText": "час"
+        }
+      },
+      "sameAs": [
+        "https://t.me/kapitankonstantin",
+        "https://instagram.com/kapitankonstantin",
+        "https://vk.com/kapitankonstantin"
+      ]
+    }
+    </script>
 
     <!-- Подключение шрифтов: Cormorant Garamond (заголовки) + EB Garamond (текст).
          Грузятся НЕ блокирующим способом (media="print" + onload) — чтобы сайт

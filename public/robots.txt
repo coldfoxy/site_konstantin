@@ -1,0 +1,8 @@
+# robots.txt — разрешает поисковикам индексировать весь сайт и указывает карту сайта.
+User-agent: *
+Allow: /
+
+# Основное зеркало (для Яндекса)
+Host: https://kapitankonstantin.ru
+
+Sitemap: https://kapitankonstantin.ru/sitemap.xml
